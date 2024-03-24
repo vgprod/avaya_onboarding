@@ -1,114 +1,80 @@
 [
   {
-    "id": "294abcc4-88b8-4949-90fa-d5954c89c74b",
+    "id": "0b4cc178-4f65-4dd2-9432-c70589310475",
     "first_name": "John",
     "last_name": "Doe",
-    "user_handle": "userhandle",
-    "password": "pass",
+    "user_handle": "John.Doe",
+    "password": "password",
     "age": 30,
+    "diplomas": [
+      "Bachelor of Science in Computer Science"
+    ],
+    "created_at": "2024-03-24T04:32:53.348877100Z",
+    "onboarded": true
+  },
+  {
+    "id": "5535fc2e-4c38-4059-9ea2-fb236a91bfd7",
+    "first_name": "Alice",
+    "last_name": "Smith",
+    "user_handle": "Alice.Smith",
+    "password": "password",
+    "age": 25,
+    "diplomas": [
+      "Master of Business Administration",
+      "Bachelor of Arts in Economics"
+    ],
+    "created_at": "2024-03-24T04:33:07.909445800Z",
+    "onboarded": false
+  },
+  {
+    "id": "38321e63-f349-432a-941c-028b03432f5c",
+    "first_name": "Michael",
+    "last_name": "Johnson",
+    "user_handle": "Michael.Johnson",
+    "password": "password",
+    "age": 40,
     "diplomas": [],
-    "created_at": "2024-03-24T01:45:51.045060400Z"
+    "created_at": "2024-03-24T04:33:19.738427700Z",
+    "onboarded": false
   },
   {
-    "id": "4824172c-3d29-4620-92c3-a6bad9400831",
-    "first_name": "John",
-    "last_name": "Doe",
-    "user_handle": "userhandle",
-    "password": "pass",
-    "age": 30,
-    "diplomas": [],
-    "created_at": "2024-03-24T01:48:25.975012200Z"
-  },
-  {
-    "id": "3cfcbe2f-9c76-4050-88cf-cbe029c6ca5b",
-    "first_name": "ADA",
-    "last_name": "ADASD",
-    "user_handle": "ADA.ADASD",
+    "id": "c81b491e-7220-40d2-b43b-dfca91a474b0",
+    "first_name": "Sophia",
+    "last_name": "Wong",
+    "user_handle": "Sophia.Wong",
     "password": "password",
-    "age": 30,
-    "diplomas": [],
-    "created_at": "2024-03-24T02:56:11.552748500Z"
-  },
-  {
-    "id": "6948e90c-bd14-4071-85ad-99ab8443a826",
-    "first_name": "ADA",
-    "last_name": "ADASD",
-    "user_handle": "ADA.ADASD",
-    "password": "password",
-    "age": 30,
-    "diplomas": [],
-    "created_at": "2024-03-24T03:05:23.791117500Z"
-  },
-  {
-    "id": "f4e6a3dd-0f71-46cf-a3de-acc2a34a4006",
-    "first_name": "ADA",
-    "last_name": "ADASD",
-    "user_handle": "ADA.ADASD",
-    "password": "password",
-    "age": 30,
+    "age": 28,
     "diplomas": [
-      "dipl"
+      "Ph.D. in Electrical Engineering",
+      "Bachelor of Science in Mathematics"
     ],
-    "created_at": "2024-03-24T03:06:04.451558100Z"
+    "created_at": "2024-03-24T04:33:28.586963100Z",
+    "onboarded": false
   },
   {
-    "id": "ca282b42-0275-4bbf-8b7f-1107633bd1b1",
-    "first_name": "ADA",
-    "last_name": "ADASD",
-    "user_handle": "ADA.ADASD",
+    "id": "8af405b4-9a03-4397-b9d9-ae0b791ef822",
+    "first_name": "L",
+    "last_name": "Brown",
+    "user_handle": "L.Brown",
     "password": "password",
-    "age": 30,
+    "age": 35,
     "diplomas": [
-      "dipl"
+      "Master of Fine Arts"
     ],
-    "created_at": "2024-03-24T03:06:05.349163300Z"
+    "created_at": "2024-03-24T04:33:54.254292800Z",
+    "onboarded": false
   },
   {
-    "id": "e9b8488c-e51d-4062-8951-eadfd909f6ae",
-    "first_name": "ADA",
-    "last_name": "ADASD",
-    "user_handle": "ADA.ADASD",
+    "id": "3d16ad81-8883-464d-9a63-611bbe970100",
+    "first_name": "L",
+    "last_name": "Brown",
+    "user_handle": "L.Brown",
     "password": "password",
-    "age": 30,
+    "age": 35,
     "diplomas": [
-      "dipl"
+      "Master of Fine Arts"
     ],
-    "created_at": "2024-03-24T03:06:05.496059900Z"
-  },
-  {
-    "id": "dce9941a-74d5-4850-96dc-c4220b672d06",
-    "first_name": "ADA",
-    "last_name": "ADASD",
-    "user_handle": "ADA.ADASD",
-    "password": "password",
-    "age": 30,
-    "diplomas": [
-      "dipl"
-    ],
-    "created_at": "2024-03-24T03:06:05.637269400Z"
-  },
-  {
-    "id": "2203d2b7-7787-4cbc-b563-55eaff9fa93a",
-    "first_name": "ADA",
-    "last_name": "ADASD",
-    "user_handle": "ADA.ADASD",
-    "password": "password",
-    "age": 30,
-    "diplomas": [
-      "dipl"
-    ],
-    "created_at": "2024-03-24T03:06:05.805161200Z"
-  },
-  {
-    "id": "ef29532a-e158-4289-967b-d873851c0967",
-    "first_name": "ADA",
-    "last_name": "ADASD",
-    "user_handle": "ADA.ADASD",
-    "password": "password",
-    "age": 30,
-    "diplomas": [
-      "dipl"
-    ],
-    "created_at": "2024-03-24T03:06:05.930437300Z"
+    "created_at": "2024-03-24T04:44:57.054020300Z",
+    "onboarded": false
   }
 ]
