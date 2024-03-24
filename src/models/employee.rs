@@ -7,11 +7,11 @@ pub struct Employee {
     pub id: Option<String>,
     pub first_name: String,
     pub last_name: String,
-    user_handle: Option<String>,
-    password: Option<String>,
+    pub user_handle: Option<String>,
+    pub password: Option<String>,
     pub age: u8,
     pub diplomas: Vec<String>,
-    created_at: Option<chrono::DateTime<Utc>>,
+    pub created_at: Option<chrono::DateTime<Utc>>,
     pub onboarded:Option<bool>,
 }
 

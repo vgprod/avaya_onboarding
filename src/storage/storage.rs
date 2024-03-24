@@ -1,7 +1,6 @@
 use uuid::Uuid;
 
 use crate::models::Employee;
-use std::error::Error;
 use std::fs;
 use std::sync:: Mutex;
 
@@ -18,26 +17,33 @@ pub async fn load_employees_from_file() -> Result<Vec<Employee>, Box<dyn std::er
     Ok(employees)
 }
 
-// Function to append a new employee and save employees to JSON file
-pub async fn save_employee_to_file(new_employee: &Employee) -> Result<(), Box<dyn std::error::Error>> {
-    
-    let mut employees = match load_employees_from_file().await {
-        Ok(existing_employees) => existing_employees,
-        Err(_) => Vec::new(),
-    };
+// Function to append a new employee and save changes of employees to JSON file
+pub async fn save_employee_to_file(employee_data: &Employee) -> Result<(), Box<dyn std::error::Error>> {
+    let mut employees = load_employees_from_file().await?;
+    let _lock = FILE_LOCK.lock().unwrap();
 
-    let _lock = FILE_LOCK.lock().unwrap(); 
-
-    employees.push(new_employee.clone());
+    if let Some(id) = &employee_data.id {
+        if let Some(index) = employees.iter().position(|e| e.id == Some(id.to_string())) {
+            employees[index] = employee_data.clone();
+        } else {
+            employees.push(employee_data.clone());
+        }
+    } else {
+        employees.push(employee_data.clone());
+    }
 
     let json_data = serde_json::to_string_pretty(&employees)?;
-
     fs::write(FILE_PATH, json_data)?;
 
     Ok(())
 }
 
-pub async fn get_employee_by_id(id: Uuid) -> Result<Option<Employee>, Box<dyn Error>> {
+pub async fn get_employee_by_id(id: Uuid) -> Option<Employee> {
     let employees = load_employees_from_file().await.unwrap_or_default();
-    Ok(employees.into_iter().find(|e| e.id == Some(id.to_string())))
+    employees.into_iter().find(|e| e.id == Some(id.to_string()))
+}
+
+pub async fn get_employee_by_password(password: &str) -> Option<Employee> {
+    let employees = load_employees_from_file().await.unwrap_or_default();
+    employees.into_iter().find(|e| e.password.as_deref() == Some(password))
 }

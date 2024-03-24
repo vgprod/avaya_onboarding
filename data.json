@@ -94,7 +94,7 @@
     "id": "6755c364-27db-4b06-b645-d89127304e5a",
     "first_name": "L",
     "last_name": "Brown",
-    "user_handle": "L.Brown",
+    "user_handle": "l.brown",
     "password": "password",
     "age": 19,
     "diplomas": [
@@ -114,6 +114,58 @@
       ""
     ],
     "created_at": "2024-03-24T08:57:32.235633100Z",
+    "onboarded": false
+  },
+  {
+    "id": "df508a97-2560-4b4d-83ee-fd94222b8ab4",
+    "first_name": "NEW",
+    "last_name": "USER",
+    "user_handle": "NEW.USER",
+    "password": "password",
+    "age": 19,
+    "diplomas": [
+      "DIPL"
+    ],
+    "created_at": "2024-03-24T11:27:41.014887200Z",
+    "onboarded": false
+  },
+  {
+    "id": "4d10242f-4a22-4997-bf8a-498b9327d884",
+    "first_name": "NEW",
+    "last_name": "USER",
+    "user_handle": "NEW.USER",
+    "password": "password",
+    "age": 44,
+    "diplomas": [
+      "DIPL"
+    ],
+    "created_at": "2024-03-24T13:44:39.175004300Z",
+    "onboarded": false
+  },
+  {
+    "id": "0cdaacb5-902a-4ab2-84fa-34b517206967",
+    "first_name": "last",
+    "last_name": "test",
+    "user_handle": "last.test",
+    "password": "password",
+    "age": 33,
+    "diplomas": [
+      "GOOD"
+    ],
+    "created_at": "2024-03-24T17:27:24.956097Z",
+    "onboarded": false
+  },
+  {
+    "id": "b3c7a660-c7bb-4b9f-8297-3354c89f43b8",
+    "first_name": "ASF",
+    "last_name": "test",
+    "user_handle": "asf.test",
+    "password": "1o%bN]!%1",
+    "age": 33,
+    "diplomas": [
+      "GOOD"
+    ],
+    "created_at": "2024-03-24T17:27:40.870790100Z",
     "onboarded": false
   }
 ]
