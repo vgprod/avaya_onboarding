@@ -1,184 +1,28 @@
 [
   {
-    "id": "0b4cc178-4f65-4dd2-9432-c70589310475",
-    "first_name": "John",
-    "last_name": "Doe",
-    "user_handle": "John.Doe",
-    "password": "password",
-    "age": 30,
-    "diplomas": [
-      "Bachelor of Science in Computer Science"
-    ],
-    "created_at": "2024-03-24T04:32:53.348877100Z",
-    "onboarded": true
-  },
-  {
-    "id": "5535fc2e-4c38-4059-9ea2-fb236a91bfd7",
-    "first_name": "Alice",
-    "last_name": "Smith",
-    "user_handle": "Alice.Smith",
-    "password": "password",
+    "id": "d77ff4af-a566-4897-a737-93b732b06da3",
+    "first_name": "Marija",
+    "last_name": "Bozic",
+    "user_handle": "marija.bozic",
+    "password": "2>Zfof0RT",
     "age": 25,
     "diplomas": [
-      "Master of Business Administration",
-      "Bachelor of Arts in Economics"
+      "MATF"
     ],
-    "created_at": "2024-03-24T04:33:07.909445800Z",
-    "onboarded": false
-  },
-  {
-    "id": "38321e63-f349-432a-941c-028b03432f5c",
-    "first_name": "Michael",
-    "last_name": "Johnson",
-    "user_handle": "Michael.Johnson",
-    "password": "password",
-    "age": 40,
-    "diplomas": [],
-    "created_at": "2024-03-24T04:33:19.738427700Z",
-    "onboarded": false
-  },
-  {
-    "id": "c81b491e-7220-40d2-b43b-dfca91a474b0",
-    "first_name": "Sophia",
-    "last_name": "Wong",
-    "user_handle": "Sophia.Wong",
-    "password": "password",
-    "age": 28,
-    "diplomas": [
-      "Ph.D. in Electrical Engineering",
-      "Bachelor of Science in Mathematics"
-    ],
-    "created_at": "2024-03-24T04:33:28.586963100Z",
-    "onboarded": false
-  },
-  {
-    "id": "8af405b4-9a03-4397-b9d9-ae0b791ef822",
-    "first_name": "L",
-    "last_name": "Brown",
-    "user_handle": "L.Brown",
-    "password": "password",
-    "age": 35,
-    "diplomas": [
-      "Master of Fine Arts"
-    ],
-    "created_at": "2024-03-24T04:33:54.254292800Z",
-    "onboarded": false
-  },
-  {
-    "id": "3d16ad81-8883-464d-9a63-611bbe970100",
-    "first_name": "L",
-    "last_name": "Brown",
-    "user_handle": "L.Brown",
-    "password": "password",
-    "age": 35,
-    "diplomas": [
-      "Master of Fine Arts"
-    ],
-    "created_at": "2024-03-24T04:44:57.054020300Z",
-    "onboarded": false
-  },
-  {
-    "id": "4cd57acc-b9f8-4cc9-aafb-3364f7f82135",
-    "first_name": "L",
-    "last_name": "Brown",
-    "user_handle": "L.Brown",
-    "password": "password",
-    "age": 19,
-    "diplomas": [
-      "Master of Fine Arts"
-    ],
-    "created_at": "2024-03-24T07:36:26.901365Z",
-    "onboarded": false
-  },
-  {
-    "id": "6755c364-27db-4b06-b645-d89127304e5a",
-    "first_name": "L",
-    "last_name": "Brown",
-    "user_handle": "l.brown",
-    "password": "password",
-    "age": 19,
-    "diplomas": [
-      "Master of Fine Arts"
-    ],
-    "created_at": "2024-03-24T07:53:01.157540600Z",
-    "onboarded": false
-  },
-  {
-    "id": "a055910c-ecbf-46ca-8cf9-0a1c0d1cbf56",
-    "first_name": "NN",
-    "last_name": "TT",
-    "user_handle": "NN.TT",
-    "password": "password",
-    "age": 19,
-    "diplomas": [
-      ""
-    ],
-    "created_at": "2024-03-24T08:57:32.235633100Z",
-    "onboarded": false
-  },
-  {
-    "id": "df508a97-2560-4b4d-83ee-fd94222b8ab4",
-    "first_name": "NEW",
-    "last_name": "USER",
-    "user_handle": "NEW.USER",
-    "password": "password",
-    "age": 19,
-    "diplomas": [
-      "DIPL"
-    ],
-    "created_at": "2024-03-24T11:27:41.014887200Z",
-    "onboarded": false
-  },
-  {
-    "id": "4d10242f-4a22-4997-bf8a-498b9327d884",
-    "first_name": "NEW",
-    "last_name": "USER",
-    "user_handle": "NEW.USER",
-    "password": "password",
-    "age": 44,
-    "diplomas": [
-      "DIPL"
-    ],
-    "created_at": "2024-03-24T13:44:39.175004300Z",
-    "onboarded": false
-  },
-  {
-    "id": "0cdaacb5-902a-4ab2-84fa-34b517206967",
-    "first_name": "last",
-    "last_name": "test",
-    "user_handle": "last.test",
-    "password": "password",
-    "age": 33,
-    "diplomas": [
-      "GOOD"
-    ],
-    "created_at": "2024-03-24T17:27:24.956097Z",
-    "onboarded": false
-  },
-  {
-    "id": "b3c7a660-c7bb-4b9f-8297-3354c89f43b8",
-    "first_name": "ASF",
-    "last_name": "test",
-    "user_handle": "asf.test",
-    "password": "1o%bN]!%1",
-    "age": 33,
-    "diplomas": [
-      "GOOD"
-    ],
-    "created_at": "2024-03-24T17:27:40.870790100Z",
-    "onboarded": false
-  },
-  {
-    "id": "f552ec4d-b2b5-4d67-b1b5-84dd88043644",
-    "first_name": "Final",
-    "last_name": "Usr",
-    "user_handle": "final.usr",
-    "password": "3$Ya_:(9d",
-    "age": 33,
-    "diplomas": [
-      "GOOD"
-    ],
-    "created_at": "2024-03-24T21:28:36.403179700Z",
+    "created_at": "2024-03-24T22:17:51.224669900Z",
     "onboarded": true
+  },
+  {
+    "id": "ca0a0bd0-b7cd-4f32-8aba-4801f4814f5f",
+    "first_name": "Meri",
+    "last_name": "Chrismas",
+    "user_handle": null,
+    "password": null,
+    "age": 25,
+    "diplomas": [
+      "MATF"
+    ],
+    "created_at": "2024-03-24T22:19:35.401629700Z",
+    "onboarded": false
   }
 ]
