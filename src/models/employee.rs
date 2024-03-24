@@ -2,7 +2,7 @@ use chrono::Utc;
 use serde::{Deserialize, Serialize};
 
 
-#[derive(Serialize, Deserialize, Clone)]
+#[derive(Serialize, Deserialize, Clone,Debug)]
 pub struct Employee {
     pub id: Option<String>,
     pub first_name: String,

@@ -31,7 +31,7 @@ pub async fn create_user(
         Some(Utc::now()),
         Some(false)
     );
-    save_employee_to_file(&new_employee).unwrap();
+    save_employee_to_file(&new_employee).await.unwrap();
 
     Ok(response::Json(new_employee))
 }

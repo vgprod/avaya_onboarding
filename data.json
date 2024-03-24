@@ -76,5 +76,44 @@
     ],
     "created_at": "2024-03-24T04:44:57.054020300Z",
     "onboarded": false
+  },
+  {
+    "id": "4cd57acc-b9f8-4cc9-aafb-3364f7f82135",
+    "first_name": "L",
+    "last_name": "Brown",
+    "user_handle": "L.Brown",
+    "password": "password",
+    "age": 19,
+    "diplomas": [
+      "Master of Fine Arts"
+    ],
+    "created_at": "2024-03-24T07:36:26.901365Z",
+    "onboarded": false
+  },
+  {
+    "id": "6755c364-27db-4b06-b645-d89127304e5a",
+    "first_name": "L",
+    "last_name": "Brown",
+    "user_handle": "L.Brown",
+    "password": "password",
+    "age": 19,
+    "diplomas": [
+      "Master of Fine Arts"
+    ],
+    "created_at": "2024-03-24T07:53:01.157540600Z",
+    "onboarded": false
+  },
+  {
+    "id": "a055910c-ecbf-46ca-8cf9-0a1c0d1cbf56",
+    "first_name": "NN",
+    "last_name": "TT",
+    "user_handle": "NN.TT",
+    "password": "password",
+    "age": 19,
+    "diplomas": [
+      ""
+    ],
+    "created_at": "2024-03-24T08:57:32.235633100Z",
+    "onboarded": false
   }
 ]
