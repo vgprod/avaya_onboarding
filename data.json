@@ -1,0 +1,22 @@
+[
+  {
+    "id": "294abcc4-88b8-4949-90fa-d5954c89c74b",
+    "first_name": "John",
+    "last_name": "Doe",
+    "user_handle": "userhandle",
+    "password": "pass",
+    "age": 30,
+    "diplomas": [],
+    "created_at": "2024-03-24T01:45:51.045060400Z"
+  },
+  {
+    "id": "4824172c-3d29-4620-92c3-a6bad9400831",
+    "first_name": "John",
+    "last_name": "Doe",
+    "user_handle": "userhandle",
+    "password": "pass",
+    "age": 30,
+    "diplomas": [],
+    "created_at": "2024-03-24T01:48:25.975012200Z"
+  }
+]

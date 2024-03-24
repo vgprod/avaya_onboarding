@@ -17,12 +17,13 @@ pub fn load_employees_from_file() -> Result<Vec<Employee>, Box<dyn std::error::E
 
 // Function to append a new employee and save employees to JSON file
 pub fn save_employee_to_file(new_employee: &Employee) -> Result<(), Box<dyn std::error::Error>> {
-    let _lock = FILE_LOCK.lock().unwrap(); 
     
     let mut employees = match load_employees_from_file() {
         Ok(existing_employees) => existing_employees,
         Err(_) => Vec::new(),
     };
+
+    let _lock = FILE_LOCK.lock().unwrap(); 
 
     employees.push(new_employee.clone());
 
