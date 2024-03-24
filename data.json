@@ -167,5 +167,18 @@
     ],
     "created_at": "2024-03-24T17:27:40.870790100Z",
     "onboarded": false
+  },
+  {
+    "id": "f552ec4d-b2b5-4d67-b1b5-84dd88043644",
+    "first_name": "Final",
+    "last_name": "Usr",
+    "user_handle": "final.usr",
+    "password": "3$Ya_:(9d",
+    "age": 33,
+    "diplomas": [
+      "GOOD"
+    ],
+    "created_at": "2024-03-24T21:28:36.403179700Z",
+    "onboarded": true
   }
 ]
