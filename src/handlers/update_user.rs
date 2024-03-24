@@ -1,6 +1,3 @@
-// The update_user retrieves a particular user based on the provided ID in the Path, for example,
-// http://127.0.0.1:8100/update/6755c364-27db-4b06-b645-d89127304e5a, and assigns a new handle and password to it.
-// This process ensures uniqueness by adding a number to the handle and regenerating the password if necessary.
 use crate::{
     models::Employee,
     storage::{
@@ -8,30 +5,25 @@ use crate::{
         save_employee_to_file,
     },
 };
-use axum::{extract::Path, response::Json};
+use axum::{extract::Path, http::StatusCode, response::Json};
 use rand::seq::SliceRandom;
 use uuid::Uuid;
 
-pub async fn update_user(Path(id): Path<Uuid>) -> Json<Employee> {
-    let default_employee = Employee {
-        id: None,
-        first_name: "Default".to_string(),
-        last_name: "Default".to_string(),
-        user_handle: None,
-        password: None,
-        age: 1,
-        diplomas: vec!["".to_string()],
-        created_at: None,
-        onboarded: None,
-    };
+// The update_user retrieves a particular user based on the provided ID in the Path, for example,
+// http://127.0.0.1:8100/update/6755c364-27db-4b06-b645-d89127304e5a, and assigns a new handle and password to it.
+// This process ensures uniqueness by adding a number to the handle and regenerating the password if necessary.
+
+pub async fn update_user(Path(id): Path<Uuid>) -> Result<Json<Employee>, StatusCode> {
     let employees = match load_employees_from_file().await {
         Ok(employees) => employees,
-        Err(_) => vec![default_employee.clone()],
+        Err(_) => return Err(StatusCode::INTERNAL_SERVER_ERROR),
     };
+
     let mut employee = match get_employee_by_id(id).await {
         Some(employee) => employee,
-        None => default_employee.clone(),
+        None => return Err(StatusCode::NOT_FOUND),
     };
+
     employee.user_handle =
         Some(generate_user_handle(&employee.first_name, &employee.last_name, &employees).await);
 
@@ -50,11 +42,13 @@ pub async fn update_user(Path(id): Path<Uuid>) -> Json<Employee> {
         }
     }
 
-    save_employee_to_file(&employee)
-        .await
-        .expect("Error while saving file");
+    employee.onboarded = Some(true);
 
-    Json(employee)
+    if let Err(_) = save_employee_to_file(&employee).await {
+        return Err(StatusCode::INTERNAL_SERVER_ERROR);
+    }
+
+    Ok(Json(employee))
 }
 
 async fn generate_user_handle(first_name: &str, last_name: &str, employees: &[Employee]) -> String {
